@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .billing-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .main-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .order-summary {
+    order: -1;
+  }
+
+  .navbar-actions {
+    gap: 8px !important;
+  }
+
+  .btn-label {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding: 16px 12px !important;
+  }
+}
